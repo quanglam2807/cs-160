@@ -1,0 +1,28 @@
+## QUANG LAM
+
+1. An interpreter is a program that reads another program as its input and does what it says.
+2. python.
+3. Local scope.
+4. Local scope > Enclosing scope > Global scope > Built-in scope.
+5. This is a txt file and I cannot draw. But for example:
+def main():
+  def hello():
+    x = 6
+
+The scope of main would be
+  ():
+    def hello():
+      x = 6
+
+The scope of hello would be
+  ():
+    x = 6
+
+6. When a function is called.
+7. When a function returns.
+8. The Heap is the area of RAM where all objects are stored.
+9. The activation record holds all the variables that are defined within the new local scope.
+10. The base case to run when the function is called the last time and the recursive case to run the rest of the time.
+11. It'll keep running forever, fill the run-time stack and cause a stack overflow error.
+12. It must be called with an argument or argument that are smaller in some way than the parameters that were passed to the function when the last call was made.
+13. type is a built-in function in the built-in scope which return the type of an object.

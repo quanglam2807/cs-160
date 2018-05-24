@@ -1,0 +1,36 @@
+# Quang Lam
+
+1. How is a list like a bunch of post office boxes?
+Because a list is like collection of post office boxes that each box has an address and can hold a value, similar to each element of a list.
+
+2. How is accessing an element of a list NOT like retrieving the contents of a post office box?
+Because to retrieve the content of a post office box, in reality, we would need to search for the box first. So the more boxes we have, the longer it takes to search and retrieve the content from a box. On the other hand, accessing an element of a list does not depend on the number of elements. No matter how many elements we have, it would take the same amount of time to retrieve a random element from the list.
+
+3. How can you compute the amount of time it takes to compute an operation in a computer using Python?
+Using the time library in Python. Then record the access time in microseconds before computing the operation (starting). Then run the operation. Then record the access time in microseconds immediately after computing the operation (endtime). The amount of time it takes is endtime - starttime.
+
+4. In terms of computational complexity, which is better, an algorithm that is O(n^2) or an algorithm that is O(2^n)?
+According the Fig 2.5 on page 56 of the book, an algorithm that is O(n^2) O(n^2) is lightly better because the computational time is less elastic when n increases. Still, in practice, both O(n^2) and O(2^n) algorithms are both inefficient and it would be hard to see the difference (unless n is very very large).
+
+5. Describe in English, what it means for an algorithm to be O(n^2).
+With a given n as the size of input, the algorithm would take up to n^2 computational operations to complete.
+
+6. When doing in proof by induction, what two parts are there to the proof?
+The base case and the meta-proof.
+
+7. ...
+n + (n - 2) + (n - 4) + (n - 6) + .... + 2
+=> O(n^2)
+
+8. ...
+Algorithm A is O(10*n). Algorithm B is O(100*n)
+
+9. ...
+Append operation on a list is more efficient because it is implemented by default and optimized by Python which means no matter how many elements we have in a list, it would only take Python one operation to add a new item or we say O(1). On the other hand, with the + operator, Python would need to create a new list for the new item [item], then create another one to hold the elements of the current list and [item], then copy each element to the new list. It would take up to O(n^2) to complete.
+
+10. ...
+a. Run a loop through the list, check the value of each element. If the value matches what we need, return the index and end the loop.
+In the best scenario, the item we need is the first element of the list, so it would take only one step. In the worst scenario, it would be the last element of the list and take n steps. So the upper-bound is n.
+Complexity: O(n).
+
+b. Python has a method called list.index(str). I'm not sure but if the method is well-optimized like append, it might be more efficient (O(1) ?).
